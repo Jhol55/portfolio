@@ -44,8 +44,8 @@ export default function Home() {
             <div className="bg-gradient-to-r from-[#130428] to-[#26094e] w-full h-[98%] rounded-xl">
             </div>
           </div>
-          <div className="flex items-end w-2/3 h-40 bg-gradient-to-l from-[#271343] to-[#4F228D] rounded-xl">
-            <div className="bg-gradient-to-l from-[#130428] to-[#26094e] w-full h-[98%] rounded-xl">
+          <div className="flex items-end w-2/3 h-40 lg:bg-gradient-to-l bg-gradient-to-r from-[#271343] to-[#4F228D] rounded-xl">
+            <div className="lg:bg-gradient-to-l bg-gradient-to-r from-[#130428] to-[#26094e] w-full h-[98%] rounded-xl">
             </div>
           </div>
         </div>
@@ -54,17 +54,17 @@ export default function Home() {
             <div className="bg-gradient-to-r from-[#130428] to-[#26094e] w-full h-[98%] rounded-xl">
             </div>
           </div>
-          <div className="flex items-end w-2/3 h-40 bg-gradient-to-l from-[#271343] to-[#4F228D] rounded-xl">
-            <div className="bg-gradient-to-l from-[#130428] to-[#26094e] w-full h-[98%] rounded-xl">
+          <div className="flex items-end w-2/3 h-40 lg:bg-gradient-to-l bg-gradient-to-r from-[#271343] to-[#4F228D] rounded-xl">
+            <div className="lg:bg-gradient-to-l bg-gradient-to-r from-[#130428] to-[#26094e] w-full h-[98%] rounded-xl">
             </div>
           </div>
         </div> 
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-10 lg:w-1/2 w-full h-screen">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-10 lg:w-1/2 w-full lg:h-screen h-[200vh] ">
           <Image src="/bg-gradient.png" alt="" fill className="" />
         </div>
       </section>
       <section>
-        
+
       </section>
     </main>
   );
