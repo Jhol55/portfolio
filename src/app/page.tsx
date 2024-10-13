@@ -19,7 +19,7 @@ export default function Home() {
             <Image src="/arrow.png" alt="" width={100} height={100} className="absolute md:block hidden -translate-x-32 -translate-y-10" />
             <p className="md:-translate-x-6 md:-translate-y-6 text-xl font-black">Olá, meu nome é <span className="text-[#7127BA]">Jhonathan!</span></p>
           </div>
-          <p className="flex flex-col gap-2 z-50">
+          <p className="flex flex-col gap-2 z-10">
             <span className="text-lg md:text-left text-center">Um desenvolvedor que</span>
             <span className="text-4xl md:text-left text-center">Julga um livro</span>
             <span className="text-4xl md:text-left text-center">
@@ -46,7 +46,7 @@ export default function Home() {
           {/* <Image src="/bg-gradient.png" alt="" fill className="" /> */}
         </div>
       </section>
-      <section className="relative flex flex-col gap-10 w-full">
+      <section id="work-experience" className="relative flex flex-col gap-10 w-full">
         <h1 className="text-4xl lg:text-left text-center xl:mx-60 lg:mx-32">Experiências de trabalho</h1>
         <div className="flex lg:flex-row flex-col lg:justify-center items-center gap-10 xl:px-60 lg:px-32">
           <div className="flex items-end w-2/3 h-40 bg-gradient-to-r from-[#271343] to-[#4F228D] rounded-xl">
@@ -86,7 +86,7 @@ export default function Home() {
         </h1>
         <hr className="w-[150px] mx-auto mt-10 border-t-4 rounded-full" />
       </section>
-      <section className="flex justify-center w-full">
+      <section id="hard-skills" className="flex justify-center w-full">
         <AnimatedBeamDemo />
       </section>
       <section>

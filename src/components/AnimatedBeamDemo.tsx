@@ -26,23 +26,23 @@ export default function AnimatedBeamDemo() {
             <AnimatedBeam containerRef={containerRef} fromRef={div5Ref} toRef={targetRef} reverse />
             <AnimatedBeam containerRef={containerRef} fromRef={div6Ref} toRef={targetRef} reverse />
 
-            <div ref={div1Ref} className="relative flex justify-center items-center z-10 md:h-12 md:min-h-12 md:w-12 md:min-w-12 min-h-8 h-8 min-w-8 w-8 rounded-full bg-[#251C31] shadow-xl">
-                <Image src="/react.png" fill alt="" className="md:p-3 p-2" />
+            <div ref={div1Ref} className="relative flex justify-center items-center z-10 sm:h-12 sm:min-h-12 sm:w-12 sm:min-w-12 min-h-8 h-8 min-w-8 w-8 rounded-full bg-[#251C31] shadow-xl">
+                <Image src="/react.png" fill alt="" className="sm:p-3 p-2" />
             </div>
-            <div ref={div2Ref} className="relative flex justify-center items-center z-10 md:h-12 md:min-h-12 md:w-12 md:min-w-12 min-h-8 h-8 min-w-8 w-8 rounded-full bg-[#251C31] shadow-xl">
-                <Image src="/next.png" fill alt="" className="md:p-3 p-2" />
+            <div ref={div2Ref} className="relative flex justify-center items-center z-10 sm:h-12 sm:min-h-12 sm:w-12 sm:min-w-12 min-h-8 h-8 min-w-8 w-8 rounded-full bg-[#251C31] shadow-xl">
+                <Image src="/next.png" fill alt="" className="sm:p-3 p-2" />
             </div>
-            <div ref={div3Ref} className="relative flex justify-center items-center z-10 md:h-12 md:min-h-12 md:w-12 md:min-w-12 min-h-8 h-8 min-w-8 w-8 rounded-full bg-[#251C31] shadow-xl">
-                <Image src="/js.png" fill alt="" className="md:p-3 p-2" />
+            <div ref={div3Ref} className="relative flex justify-center items-center z-10 sm:h-12 sm:min-h-12 sm:w-12 sm:min-w-12 min-h-8 h-8 min-w-8 w-8 rounded-full bg-[#251C31] shadow-xl">
+                <Image src="/js.png" fill alt="" className="sm:p-3 p-2" />
             </div>
-            <div ref={div4Ref} className="relative flex justify-center items-center z-10 md:h-12 md:min-h-12 md:w-12 md:min-w-12 min-h-8 h-8 min-w-8 w-8 rounded-full bg-[#251C31] shadow-xl">
-                <Image src="/ts.png" fill alt="" className="md:p-3 p-2" />
+            <div ref={div4Ref} className="relative flex justify-center items-center z-10 sm:h-12 sm:min-h-12 sm:w-12 sm:min-w-12 min-h-8 h-8 min-w-8 w-8 rounded-full bg-[#251C31] shadow-xl">
+                <Image src="/ts.png" fill alt="" className="sm:p-3 p-2" />
             </div>
-            <div ref={div5Ref} className="relative flex justify-center items-center z-10 md:h-12 md:min-h-12 md:w-12 md:min-w-12 min-h-8 h-8 min-w-8 w-8 rounded-full bg-[#251C31] shadow-xl">
-                <Image src="/html.png" fill alt="" className="md:p-3 p-2" />
+            <div ref={div5Ref} className="relative flex justify-center items-center z-10 sm:h-12 sm:min-h-12 sm:w-12 sm:min-w-12 min-h-8 h-8 min-w-8 w-8 rounded-full bg-[#251C31] shadow-xl">
+                <Image src="/html.png" fill alt="" className="sm:p-3 p-2" />
             </div>
-            <div ref={div6Ref} className="relative flex justify-center items-center z-10 md:h-12 md:min-h-12 md:w-12 md:min-w-12 min-h-8 h-8 min-w-8 w-8 rounded-full bg-[#251C31] shadow-xl">
-                <Image src="/tailwind.png" fill alt="" className="md:p-3 p-2" />
+            <div ref={div6Ref} className="relative flex justify-center items-center z-10 sm:h-12 sm:min-h-12 sm:w-12 sm:min-w-12 min-h-8 h-8 min-w-8 w-8 rounded-full bg-[#251C31] shadow-xl">
+                <Image src="/tailwind.png" fill alt="" className="sm:p-3 p-2" />
             </div>
 
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 md:-translate-y-1/4 -translate-y-1/2 bottom-0 z-50 h-full w-full rounded-full shadow-xl">
