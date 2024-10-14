@@ -1,4 +1,4 @@
-import HardSkills from "@/sections/HardSkills";
+import HardSkills from "@/components/HardSkills";
 import Image from "next/image";
 
 

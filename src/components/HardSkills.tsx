@@ -3,7 +3,7 @@
 import { AnimatedBeam } from "@/components/AnimatedBeam";
 import Image from "next/image";
 import { useRef } from "react";
-import { AnimatedTooltip } from "../components/AnimatedTooltip";
+import { AnimatedTooltip } from "./AnimatedTooltip";
 
 export default function HardSkills() {
     const containerRef = useRef<HTMLDivElement>(null);
