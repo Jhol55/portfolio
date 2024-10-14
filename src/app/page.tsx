@@ -14,7 +14,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col gap-6">
           <div className="relative flex md:justify-start justify-center">
-            <Image src="/arrow.png" alt="" width={100} height={100} priority className="absolute md:block hidden -translate-x-32 -translate-y-10" />
+            <Image src="/arrow.png" alt="Arrow" width={100} height={100} priority className="absolute md:block hidden -translate-x-32 -translate-y-10" />
             <p className="md:-translate-x-6 md:-translate-y-6 text-xl font-black">Olá, meu nome é <span className="text-[#7127BA]">Jhonathan!</span></p>
           </div>
           <p className="flex flex-col gap-2 z-10">
@@ -97,9 +97,11 @@ export default function Home() {
         <div className="flex flex-col gap-4">
           <div className="flex gap-4">
             <div className="relative h-8 w-8">
-              <Image src="/icons/linkedin.png" fill alt="Linkedin" />
+              <Image src="/icons/linkedin.png" fill alt="LinkedIn" />
             </div>
-            <a href="https://www.linkedin.com/in/jhonathan-galhardo-94a284308" target="_blank">jhonathan-galhardo-94a284308</a>
+            <a href="https://www.linkedin.com/in/jhonathan-galhardo-94a284308" target="_blank" aria-label="LinkedIn">
+              jhonathan-galhardo-94a284308
+            </a>
           </div>
           <div className="flex gap-4">
             <div className="relative h-8 w-8">
