@@ -93,7 +93,7 @@ export default function Home() {
       <section id="hard-skills" className="flex justify-center w-full">
         <AnimatedBeamDemo />
       </section>
-      <section id="contact" className="flex flex-col items-center mb-32 mt-32">
+      <section id="contact" className="flex flex-col items-center mb-32">
         <hr className="w-[150px] mx-auto mb-10 border-t-4 rounded-full" />
         <h1 className="text-4xl mb-6 text-center">Vamos criar um universo de <span className="text-[#7127BA]">possibilidades</span> juntos!</h1>
         <div className="flex flex-col gap-4">
