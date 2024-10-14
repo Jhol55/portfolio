@@ -55,6 +55,7 @@ const Navigation = ({ className, open, onClick }: { className?: string, open: bo
                 </div>
                 <div className="flex justify-center w-1/2">
                     <ShimmerButton
+                        onClick={onClick}
                         href="#contact"
                         className="!text-white !px-6"
                         background="bg-gradient-to-r from-[#9757EE] to-[#3b157d]"
