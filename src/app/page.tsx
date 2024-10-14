@@ -1,7 +1,5 @@
-import AnimatedBeamDemo from "@/components/AnimatedBeamDemo";
+import HardSkills from "@/sections/HardSkills";
 import Image from "next/image";
-
-
 
 
 export default function Home() {
@@ -91,7 +89,7 @@ export default function Home() {
         <hr className="w-[150px] mx-auto mt-12 border-t-4 rounded-full" />
       </section>
       <section id="hard-skills" className="flex justify-center w-full">
-        <AnimatedBeamDemo />
+        <HardSkills />
       </section>
       <section id="contact" className="flex flex-col items-center mb-32">
         <hr className="w-[150px] mx-auto mb-10 border-t-4 rounded-full" />
@@ -115,7 +113,7 @@ export default function Home() {
             </div>
             <p>jhonathan_galhardo@hotmail.com</p>
           </div>
-        </div>   
+        </div>
       </section>
     </main>
   );
