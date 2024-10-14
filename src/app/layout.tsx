@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-cursive antialiased bg-[#10071f] text-white">
+      <body className="font-sans antialiased bg-[#10071f] text-white">
         <StarsBackground className="fixed -z-10" />
         <ShootingStars className="fixed -z-10" />
         {/* <ScrollProgress className="bg-gradient-to-r from-[#271343] to-[#4F228D]" /> */}
