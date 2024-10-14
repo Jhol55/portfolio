@@ -76,14 +76,11 @@ export default function Home() {
       <section id="objectives" className="lg:px-52 md:px-28">
         <hr className="w-[150px] mx-auto mb-10 border-t-4 rounded-full" />
         <h1 className="text-4xl mb-6 text-center">Objetivos</h1>
-        <p className="text-xl text-justify mb-10">Atualmente estou procurando
-          <span className="text-[#7127BA]">
-            &nbsp;ingressar&nbsp;
-          </span>
+        <p className="text-xl text-justify mb-10">
+          Atualmente estou procurando
+          <span className="text-[#7127BA]"> ingressar </span>
           em uma empresa onde eu possa colaborar em projetos desafiadores, compartilhar meus conhecimentos e continuar aprimorando minhas habilidades em desenvolvimento web, contribuindo para o
-          <span className="text-[#7127BA]">
-            &nbsp;sucesso&nbsp;
-          </span>
+          <span className="text-[#7127BA]"> sucesso </span>
           e crescimento da empresa.
         </p>
         <hr className="w-[150px] mx-auto mt-12 border-t-4 rounded-full" />
