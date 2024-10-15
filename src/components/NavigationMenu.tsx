@@ -9,26 +9,7 @@ import { StarsBackground } from "@/components/StarsBackground";
 import { ShootingStars } from "@/components/ShootingStars";
 
 
-const Navigation = ({ className, open, onClick }: { className?: string, open: boolean, onClick?: () => void }) => {
-    const [isFixed, setIsFixed] = useState(false);
-
-    const handleScroll = () => {
-        if (window.scrollY > 70) {
-            setIsFixed(true);
-        } else {
-            setIsFixed(false);
-        }
-    };
-
-    useEffect(() => {
-        handleScroll();
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-
-    }, []);
-
+const Navigation = ({ className, open, isFixed, onClick }: { className?: string, open: boolean, isFixed?: boolean, onClick?: () => void }) => {
     return (
         <>
             <div className={cn((!isFixed || open) && "!hidden", "h-20 w-full")} />
@@ -103,7 +84,7 @@ export const NavigationMenu = () => {
 
     return (
         <header className={cn(!isFixed && "p-6", "flex items-center lg:mb-20 lg:justify-center justify-end gap-4")}>
-            <Navigation className="lg:flex hidden" open={open} />
+            <Navigation className="lg:flex hidden" open={open} isFixed={isFixed} />
             <Drawer
                 open={!isDesktop && open}
                 onClose={() => setOpen(false)}
@@ -130,7 +111,7 @@ export const NavigationMenu = () => {
                 >
                     <div className="my-6 overflow-y-auto">
                         <DrawerTitle className='hidden' />
-                        <Navigation onClick={() => setOpen(false)} open={open} />
+                        <Navigation onClick={() => setOpen(false)} open={open} isFixed={isFixed} />
                     </div>
                     <StarsBackground className="-z-10" />
                     <ShootingStars className="-z-10" />
