@@ -67,7 +67,7 @@ export default function Home() {
           </div>
         </div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-10 lg:w-1/2 w-full lg:h-screen h-[200vh] opacity-100">
-          <Image src="/bg-gradient.png" alt="" fill className="" />
+          <Image src="/bg-gradient.png" alt="" fill loading="lazy" className="" />
         </div>
         {/* <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-10 lg:w-1/2 w-full lg:h-screen h-[200vh] opacity-80">
           <Image src="/galaxy.png" alt="" fill />
@@ -94,7 +94,7 @@ export default function Home() {
         <div className="flex flex-col gap-4">
           <div className="flex gap-4">
             <div className="relative h-8 w-8">
-              <Image src="/icons/linkedin.png" fill alt="LinkedIn" />
+              <Image src="/icons/linkedin.png" fill loading="lazy" alt="LinkedIn" />
             </div>
             <a href="https://www.linkedin.com/in/jhonathan-galhardo-94a284308" target="_blank" aria-label="LinkedIn">
               jhonathan-galhardo-94a284308
@@ -102,13 +102,13 @@ export default function Home() {
           </div>
           <div className="flex gap-4">
             <div className="relative h-8 w-8">
-              <Image src="/icons/wpp.png" fill alt="Whatsapp" />
+              <Image src="/icons/wpp.png" fill loading="lazy" alt="Whatsapp" />
             </div>
             <p>(19) 99949-8128</p>
           </div>
           <div className="flex gap-4 mb-4">
             <div className="relative h-8 w-8">
-              <Image src="/icons/email.png" fill alt="Email" />
+              <Image src="/icons/email.png" fill loading="lazy" alt="Email" />
             </div>
             <p>jhonathan_galhardo@hotmail.com</p>
           </div>
