@@ -7,13 +7,14 @@ import { cn } from "@/lib/utils";
 import { useMediaQuery } from "@reactuses/core";
 import { StarsBackground } from "@/components/StarsBackground";
 import { ShootingStars } from "@/components/ShootingStars";
+import Link from "next/link";
 
 
 const NavigationAnchor = ({ text, href, onClick } : { text: string, href: string, onClick?: () => void }) => {
     return (
-        <a href={href} className="text-white text-center whitespace-nowrap content-center px-4 py-2 border border-white/50 rounded-full" onClick={onClick}>
+        <Link href={href} className="text-white text-center whitespace-nowrap content-center px-4 py-2 border border-white/50 rounded-full" onClick={onClick}>
             {text}
-        </a>
+        </Link>
     )
 }
 
