@@ -9,6 +9,14 @@ import { StarsBackground } from "@/components/StarsBackground";
 import { ShootingStars } from "@/components/ShootingStars";
 
 
+const NavigationAnchor = ({ text, href, onClick } : { text: string, href: string, onClick?: () => void }) => {
+    return (
+        <a href={href} className="text-white text-center whitespace-nowrap content-center px-4 py-2 border border-white/50 rounded-full" onClick={onClick}>
+            {text}
+        </a>
+    )
+}
+
 const Navigation = ({ className, onClick }: { className?: string, onClick?: () => void }) => {
     return (
         <>
@@ -19,18 +27,10 @@ const Navigation = ({ className, onClick }: { className?: string, onClick?: () =
                     className)}
             >
                 <div className="flex lg:w-full w-[200px] gap-10 justify-center lg:items-center px-4 flex-col lg:flex-row">
-                    <a href="#top" className="text-white text-center whitespace-nowrap content-center px-4 py-2 border border-white/50 rounded-full" onClick={onClick}>
-                        Sobre mim
-                    </a>
-                    <a href="#work-experience" className="text-white text-center whitespace-nowrap content-center px-4 py-2 border border-white/50 rounded-full" onClick={onClick}>
-                        Experiências
-                    </a>
-                    <a href="#objectives" className="text-white text-center whitespace-nowrap content-center px-4 py-2 border border-white/50 rounded-full" onClick={onClick}>
-                        Objetivos
-                    </a>
-                    <a href="#hard-skills" className="text-white text-center whitespace-nowrap content-center px-4 py-2 border border-white/50 rounded-full" onClick={onClick}>
-                        Hard Skills
-                    </a>
+                    <NavigationAnchor href="#top" text="Sobre mim" onClick={onClick} />
+                    <NavigationAnchor href="#work-experience" text="Experiências" onClick={onClick} />
+                    <NavigationAnchor href="#objectives" text="Objetivos" onClick={onClick} />
+                    <NavigationAnchor href="#hard-skills" text="Hard Skills" onClick={onClick} />
                 </div>
                 <div className="flex justify-center w-1/2">
                     <ShimmerButton
