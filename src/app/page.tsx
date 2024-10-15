@@ -66,7 +66,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-10 lg:w-1/2 w-full lg:h-screen h-[200vh] opacity-100">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-10 lg:w-1/2 h-screen w-screen">
           <Image src="/bg-gradient.png" alt="" fill loading="lazy" className="" />
         </div>
         {/* <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-10 lg:w-1/2 w-full lg:h-screen h-[200vh] opacity-80">
