@@ -65,7 +65,9 @@ export default function HardSkills() {
 
             <div className="z-20 h-full w-full rounded-full shadow-xl">
                 <div className="relative flex justify-center items-center w-full h-full">
-                    <div ref={targetRef} className="absolute h-2 w-1/12 -translate-x-[7%] -translate-y-[4vw]"></div>
+                    <div ref={targetRef} className="absolute h-2 w-1/12 -translate-x-[7%] -translate-y-[4vw]">
+                        <Image src="/bg-gradient.png" fill alt="" />
+                    </div>
                     <Image src="/bg-skills2.png" fill alt="" className="absolute z-10 object-contain" />
                     <div className="relative w-full h-full translate-y-8 opacity-70">
                         <Image src="/bg-gradient.png" fill alt="" />

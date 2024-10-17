@@ -1,4 +1,5 @@
 import HardSkills from "@/components/HardSkills";
+import { WorkExperienceCard } from "@/components/WorkExperienceCard";
 import Image from "next/image";
 
 
@@ -47,28 +48,33 @@ export default function Home() {
       <section id="work-experience" className="relative flex flex-col gap-10 w-full">
         <h1 className="text-4xl lg:text-left text-center xl:mx-60 lg:mx-32">Experiência profissional</h1>
         <div className="flex lg:flex-row flex-col lg:justify-center items-center gap-10 xl:px-60 lg:px-32">
-          <div className="flex items-end w-2/3 h-40 bg-gradient-to-r from-[#271343] to-[#4F228D] rounded-xl">
-            <div className="bg-gradient-to-r from-[#130428] to-[#26094e] w-full h-[98%] rounded-xl">
-            </div>
-          </div>
-          <div className="flex items-end w-2/3 h-40 lg:bg-gradient-to-l bg-gradient-to-r from-[#271343] to-[#4F228D] rounded-xl">
-            <div className="lg:bg-gradient-to-l bg-gradient-to-r from-[#130428] to-[#26094e] w-full h-[98%] rounded-xl">
-            </div>
-          </div>
+          <WorkExperienceCard
+            gradientDirection="right"
+            title="Agência Kreivo"
+            description="Desenvolvedor Front-end"
+            src="/logo.png"
+            ctaText="Ver mais"
+            ctaLink=""
+            content={
+              <p>
+                Atuo como desenvolvedor freelance, criando sites e soluçôes web para diversos clientes, aplicando meus conhecimentos em Wordpress e Next.js
+                para desenvolver sites modernos, otimizados e de alto desempenho
+              </p>
+            }
+          />
+          <WorkExperienceCard
+            gradientDirection="left"
+            title="A próxima pode ser a sua empresa!"
+            description="Desenvolvedor Front-end | Estagiário"
+            src="/hand.png"
+            ctaText=""
+            ctaLink=""
+            content=""
+          />
         </div>
-        <div className="flex lg:flex-row flex-col lg:justify-center items-center gap-10 xl:px-60 lg:px-32">
-          <div className="flex items-end w-2/3 h-40 bg-gradient-to-r from-[#271343] to-[#4F228D] rounded-xl">
-            <div className="bg-gradient-to-r from-[#130428] to-[#26094e] w-full h-[98%] rounded-xl">
-            </div>
-          </div>
-          <div className="flex items-end w-2/3 h-40 lg:bg-gradient-to-l bg-gradient-to-r from-[#271343] to-[#4F228D] rounded-xl">
-            <div className="lg:bg-gradient-to-l bg-gradient-to-r from-[#130428] to-[#26094e] w-full h-[98%] rounded-xl">
-            </div>
-          </div>
-        </div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-10 lg:w-1/2 lg:h-screen h-full w-screen">
+        {/* <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-10 lg:w-1/2 lg:h-[50vh] h-screen w-full">
           <Image src="/bg-gradient.png" alt="" fill loading="lazy" className="" />
-        </div>
+        </div> */}
         {/* <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-10 lg:w-1/2 w-full lg:h-screen h-[200vh] opacity-80">
           <Image src="/galaxy.png" alt="" fill />
         </div> */}
