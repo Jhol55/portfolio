@@ -8,6 +8,7 @@ export const WorkExperienceCard = ({
   ctaText,
   ctaLink,
   description,
+  observation,
   content,
   gradientDirection
 }: {
@@ -16,6 +17,7 @@ export const WorkExperienceCard = ({
   ctaText: string;
   ctaLink: string;
   description: string;
+  observation: string;
   content: React.ReactNode;
   gradientDirection: "right" | "left"
 }) => {
@@ -30,6 +32,7 @@ export const WorkExperienceCard = ({
       <ExpandableCard
         title={title}
         description={description}
+        observation={observation}
         src={src}
         ctaText={ctaText}
         ctaLink={ctaLink}

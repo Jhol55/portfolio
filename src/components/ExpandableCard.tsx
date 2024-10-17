@@ -11,6 +11,7 @@ export function ExpandableCard({
   ctaText,
   ctaLink,
   description,
+  observation,
   content,
   className
 }: {
@@ -19,6 +20,7 @@ export function ExpandableCard({
   ctaText: string;
   ctaLink: string;
   description: string;
+  observation: string;
   content: React.ReactNode;
   className?: string;
 }) {
@@ -89,6 +91,9 @@ export function ExpandableCard({
                     <motion.p className="text-neutral-300">
                       {description}
                     </motion.p>
+                    <motion.p className="text-neutral-300">
+                      {observation}
+                    </motion.p>
                   </div>
                   <motion.a
                     href={ctaLink}
@@ -111,11 +116,11 @@ export function ExpandableCard({
         )}
       </AnimatePresence>
       <motion.div
-        className="max-w-2xl mx-auto w-full h-full gap-4"
+        className="w-full h-full gap-4"
         layoutId={id}
       >
         <motion.div className="p-4 flex flex-col md:flex-row justify-between items-center h-full rounded-xl">
-          <div className="flex gap-4 flex-col md:flex-row">
+          <div className="flex md:gap-4 flex-col md:flex-row">
             <motion.div>
               <div className="relative h-full w-20">
                 <Image
@@ -133,11 +138,14 @@ export function ExpandableCard({
               <motion.p className="text-neutral-300 text-center md:text-left">
                 {description}
               </motion.p>
+              <motion.p className="text-neutral-300 text-center md:text-left">
+                {observation}
+              </motion.p>
             </div>
           </div>
 
           {ctaText &&
-            <motion.button onClick={() => setOpen(true)} className="my-1 whitespace-nowrap rounded-full bg-[linear-gradient(325deg,#4F228D_0%,#874CDE_55%,#4F228D_90%)] bg-[280%_auto] px-6 py-2 font-medium text-white shadow-[0px_0px_20px_rgba(111,57,173,0.5),0px_5px_5px_-1px_rgba(133,94,197,0.25),inset_4px_4px_8px_rgba(161,117,227,0.5),inset_-4px_-4px_8px_rgba(79,34,141,0.35)] transition-[background] duration-700 hover:bg-right-top">
+            <motion.button onClick={() => setOpen(true)} className="mt-2 whitespace-nowrap rounded-full bg-[linear-gradient(325deg,#4F228D_0%,#874CDE_55%,#4F228D_90%)] bg-[280%_auto] px-6 py-2 font-medium text-white shadow-[0px_0px_20px_rgba(111,57,173,0.5),0px_5px_5px_-1px_rgba(133,94,197,0.25),inset_4px_4px_8px_rgba(161,117,227,0.5),inset_-4px_-4px_8px_rgba(79,34,141,0.35)] transition-[background] duration-700 hover:bg-right-top">
               {ctaText}
             </motion.button>
           }

@@ -58,7 +58,7 @@ export default function HardSkills() {
                 <AnimatedTooltip
                     tooltipContent={<span className="font-bold text-white text-lg">Tailwind CSS</span>}>
                     <div ref={div6Ref} className="relative cursor-pointer flex justify-center items-center z-10 sm:h-12 sm:min-h-12 sm:w-12 sm:min-w-12 min-h-8 h-8 min-w-8 w-8 rounded-full bg-[#251C31] shadow-xl">
-                        <Image src="/tailwind.png" fill alt="" className="sm:p-3 p-2" />
+                        <Image src="/tailwind.png" fill alt="" className="sm:p-3 p-2 z-50" />
                     </div>
                 </AnimatedTooltip>
             </div>
