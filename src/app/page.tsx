@@ -52,7 +52,7 @@ export default function Home() {
             gradientDirection="right"
             title="Agência Kreivo"
             description="Desenvolvedor Front-end Freelance"
-            observation="2024 - Atual"
+            observation="08/2024 - Atual"
             src="/logo.png"
             ctaText="Ver mais"
             ctaLink=""
