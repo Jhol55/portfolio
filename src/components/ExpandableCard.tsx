@@ -120,9 +120,9 @@ export function ExpandableCard({
         layoutId={id}
       >
         <motion.div className="p-4 flex flex-col md:flex-row justify-between items-center h-full rounded-xl">
-          <div className="flex md:gap-4 flex-col md:flex-row">
-            <motion.div>
-              <div className="relative h-full w-20">
+          <div className="flex md:gap-4 flex-col md:flex-row items-center">
+            <motion.div className="flex justify-center items-center h-20">
+              <div className="relative h-full w-32 lg:w-20 lg:mr-2">
                 <Image
                   src={src}
                   alt={title}
@@ -131,7 +131,7 @@ export function ExpandableCard({
                 />
               </div>
             </motion.div>
-            <div className="">
+            <div className="lg:mb-0 mb-4">
               <motion.h3 className="font-medium text-lg text-white text-center md:text-left">
                 {title}
               </motion.h3>
@@ -145,11 +145,10 @@ export function ExpandableCard({
           </div>
 
           {ctaText &&
-            <motion.button onClick={() => setOpen(true)} className="mt-2 whitespace-nowrap rounded-full bg-[linear-gradient(325deg,#4F228D_0%,#874CDE_55%,#4F228D_90%)] bg-[280%_auto] px-6 py-2 font-medium text-white shadow-[0px_0px_20px_rgba(111,57,173,0.5),0px_5px_5px_-1px_rgba(133,94,197,0.25),inset_4px_4px_8px_rgba(161,117,227,0.5),inset_-4px_-4px_8px_rgba(79,34,141,0.35)] transition-[background] duration-700 hover:bg-right-top">
+            <motion.button onClick={() => setOpen(true)} className="m-2 whitespace-nowrap rounded-full bg-[linear-gradient(325deg,#4F228D_0%,#874CDE_55%,#4F228D_90%)] bg-[280%_auto] px-6 py-2 font-medium text-white shadow-[0px_0px_20px_rgba(111,57,173,0.5),0px_5px_5px_-1px_rgba(133,94,197,0.25),inset_4px_4px_8px_rgba(161,117,227,0.5),inset_-4px_-4px_8px_rgba(79,34,141,0.35)] transition-[background] duration-700 hover:bg-right-top">
               {ctaText}
             </motion.button>
           }
-
         </motion.div>
       </motion.div>
     </>

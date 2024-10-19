@@ -47,7 +47,7 @@ export default function Home() {
       </section>
       <section id="work-experience" className="relative flex flex-col gap-10 w-full">
         <h1 className="text-4xl lg:text-left text-center xl:mx-60 lg:mx-32">Experiência profissional</h1>
-        <div className="flex lg:flex-row flex-col lg:justify-center items-center gap-10 xl:px-60 lg:px-32">
+        <div className="flex xl:flex-row flex-col lg:justify-center items-center gap-10 xl:px-60 lg:px-32">
           <WorkExperienceCard
             gradientDirection="right"
             title="Agência Kreivo"
@@ -69,7 +69,7 @@ export default function Home() {
             description="Desenvolvedor Front-end Junior | Estagiário"
             observation=""
             src="/hand.png"
-            ctaText=""
+            ctaText="Ver mais"
             ctaLink=""
             content=""
           />
