@@ -47,7 +47,7 @@ export default function Home() {
       </section>
       <section id="work-experience" className="relative flex flex-col gap-10 w-full">
         <h1 className="text-4xl lg:text-left text-center xl:mx-60 lg:mx-32">Experiência profissional</h1>
-        <div className="flex xl:flex-row flex-col lg:justify-center items-center gap-10 xl:px-60 lg:px-32">
+        <div className="flex xl:flex-row flex-col lg:justify-center items-center gap-10 xl:px-60 md:px-32">
           <WorkExperienceCard
             gradientDirection="right"
             title="Agência Kreivo"
@@ -71,15 +71,14 @@ export default function Home() {
             src="/hand.png"
             ctaText="Ver mais"
             ctaLink=""
-            content=""
+            content={
+              <p>
+                Atualmente, realizo trabalhos como freelancer, mas estou em busca de uma oportunidade 
+                para ingressar de forma mais sólida na área e desenvolver minha carreira.
+              </p>
+            }
           />
         </div>
-        {/* <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-10 lg:w-1/2 lg:h-[50vh] h-screen w-full">
-          <Image src="/bg-gradient.png" alt="" fill loading="lazy" className="" />
-        </div> */}
-        {/* <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-10 lg:w-1/2 w-full lg:h-screen h-[200vh] opacity-80">
-          <Image src="/galaxy.png" alt="" fill />
-        </div> */}
       </section>
       <section id="objectives" className="lg:px-52 md:px-28">
         <hr className="w-[150px] mx-auto mb-10 border-t-4 rounded-full" />
