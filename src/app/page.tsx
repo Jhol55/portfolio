@@ -37,8 +37,10 @@ export default function Home() {
         <hr className="w-[150px] mx-auto mb-10 border-t-4 rounded-full" />
         <h1 className="text-4xl mb-6 text-center">Um pouco sobre <span className="text-[#874CDE]">mim</span></h1>
         <p className="text-xl text-justify">
-          Sou estudante de Análise e Desenvolvimento de Sistemas e atuo como desenvolvedor freelance, criando sites e soluções web.
-          Utilizo tecnologias como HTML, CSS, JavaScript, TypeScript, React.js, Next.js e Python, além de trabalhar com WordPress para entregar projetos otimizados e funcionais.
+          Minha jornada no desenvolvimento começou com Python, onde criei automações para otimizar processos repetitivos e manuais, o que despertou meu interesse pela área de tecnologia. 
+          A partir daí, migrei meu foco para o desenvolvimento front-end, desenvolvendo meus conhecimentos em HTML, CSS, JavaScript (JS), TypeScript (TS) e também frameworks como React.js e Next.js.
+          Atualmente, sou estudante de Análise e Desenvolvimento de Sistemas e atuo como desenvolvedor freelance, criando sites e soluções web. 
+          Colaboro com uma agência onde aplico meus conhecimentos em WordPress e Next.js para desenvolver sites modernos, otimizados e de alto desempenho.
         </p>
         <hr className="w-[150px] mx-auto mt-12 border-t-4 rounded-full" />
         <div className="absolute -z-10 w-full h-full opacity-50">
@@ -73,7 +75,7 @@ export default function Home() {
             ctaLink=""
             content={
               <p>
-                Atualmente, realizo trabalhos como freelancer, mas estou em busca de uma oportunidade 
+                Atualmente, realizo trabalhos como freelancer, mas estou em busca de uma oportunidade
                 para ingressar de forma mais sólida na área e desenvolver minha carreira.
               </p>
             }
