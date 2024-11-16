@@ -73,7 +73,7 @@ export default function Home() {
             ctaLink=""
             content={
               <p>
-                Atualmente, realizo trabalhos como freelancer, mas estou em busca de uma oportunidade 
+                Atualmente, realizo trabalhos como freelancer, mas estou em busca de uma oportunidade
                 para ingressar de forma mais sólida na área e desenvolver minha carreira.
               </p>
             }
@@ -120,7 +120,14 @@ export default function Home() {
             <p>jhonathan_galhardo@hotmail.com</p>
           </div>
         </div>
+        <div className="flex flex-col gap-4 mt-6">
+          <h2 className="text-lg">Confira meu currículo em detalhes! Clique para baixar!</h2>
+          <a download href="/jhonathan-galhardo.pdf" className="m-auto whitespace-nowrap rounded-full bg-[linear-gradient(325deg,#4F228D_0%,#874CDE_55%,#4F228D_90%)] bg-[280%_auto] px-6 py-2 font-medium text-white shadow-[0px_0px_20px_rgba(111,57,173,0.5),0px_5px_5px_-1px_rgba(133,94,197,0.25),inset_4px_4px_8px_rgba(161,117,227,0.5),inset_-4px_-4px_8px_rgba(79,34,141,0.35)] transition-[background] duration-700 hover:bg-right-top">
+            Download
+          </a>
+        </div>
       </section>
+      
     </main>
   );
 }
